@@ -2,191 +2,144 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Travel Blog - Homepage</title>
+    <title>Travel Website Home</title>
 
-    <!-- 
-        This CSS styles the number blocks, hover effects,
-        and nested travel destination lists.
-    -->
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 20px;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(to bottom, #dfe9f3, #ffffff);
+            margin: 0;
+            padding: 0;
         }
 
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-
-        /* Container for the clickable number blocks */
-        .number-container {
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 40px;
-        }
-
-        /* Individual number blocks */
-        .number-block {
-            width: 80px;
-            height: 80px;
-            font-size: 32px;
+        header {
+            background: linear-gradient(to right, #1e3c72, #2a5298);
             color: white;
+            padding: 40px 20px;
             text-align: center;
-            line-height: 80px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 42px;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        nav {
+            background: #ffffff;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        nav a {
+            margin: 0 15px;
             text-decoration: none;
-            border-radius: 10px;
-            transition: transform 0.3s;
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 18px;
         }
 
-        /* Hover effect for interaction */
-        .number-block:hover {
-            transform: scale(1.1);
+        nav a:hover {
+            color: #2980b9;
         }
 
-        /* Different colors for each block */
-        .one { background-color: #e74c3c; }
-        .two { background-color: #3498db; }
-        .three { background-color: #2ecc71; }
-        .four { background-color: #9b59b6; }
-
-        /* Styling travel sections */
-        section {
-            margin-bottom: 40px;
+        .hero {
+            padding: 80px 20px;
+            text-align: center;
+            background: url("https://picsum.photos/1200/400?travel") no-repeat center/cover;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
         }
 
-        h2 {
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 20px;
+        }
+
+        .content {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .card h3 {
             color: #2c3e50;
         }
 
-        ol {
-            color: #34495e;
-        }
-
-        ul {
-            color: #555;
+        footer {
+            background: #2a5298;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
         }
     </style>
 </head>
 
 <body>
 
-<h1>Travel Blog Destinations</h1>
+<header>
+    <h1>World Explorer</h1>
+    <p>Discover Amazing Destinations Around the Globe</p>
+</header>
 
-<!-- Clickable number blocks -->
-<div class="number-container">
-    <a href="#europe" class="number-block one">1</a>
-    <a href="#asia" class="number-block two">2</a>
-    <a href="#america" class="number-block three">3</a>
-    <a href="#africa" class="number-block four">4</a>
+<nav>
+    <a href="homepage.html">Home</a>
+    <a href="travel-stories.html">Travel Stories</a>
+</nav>
+
+<section class="hero">
+    <h2>Your Journey Starts Here</h2>
+    <p>Explore culture, landmarks, and unforgettable places.</p>
+</section>
+
+<div class="content">
+    <div class="card">
+        <h3>🌍 Global Adventures</h3>
+        <p>
+            Our website showcases some of the most iconic travel destinations in the world,
+            including France, Rome, and New York.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>📸 Dynamic Images</h3>
+        <p>
+            Each time you refresh the page, new images appear to keep the experience fresh and exciting.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>✨ Modern Design</h3>
+        <p>
+            We used gradients, shadows, rounded corners, and hover effects to create a professional and 3D-like design.
+        </p>
+    </div>
 </div>
 
-<!-- Europe Section -->
-<section id="europe">
-    <h2>Europe</h2>
-    <ol>
-        <li>France
-            <ul>
-                <li>Paris</li>
-            </ul>
-        </li>
-        <li>Italy
-            <ul>
-                <li>Rome</li>
-            </ul>
-        </li>
-        <li>Greece
-            <ul>
-                <li>Athens</li>
-            </ul>
-        </li>
-    </ol>
-</section>
-
-<!-- Asia Section -->
-<section id="asia">
-    <h2>Asia</h2>
-    <ol>
-        <li>Japan
-            <ul>
-                <li>Tokyo</li>
-                <li>Kyoto</li>
-                <li>Osaka</li>
-            </ul>
-        </li>
-        <li>China
-            <ul>
-                <li>Beijing</li>
-                <li>Shanghai</li>
-                <li>Xi'an</li>
-            </ul>
-        </li>
-        <li>India
-            <ul>
-                <li>New Delhi</li>
-                <li>Mumbai</li>
-                <li>Jaipur</li>
-            </ul>
-        </li>
-    </ol>
-</section>
-
-<!-- America Section -->
-<section id="america">
-    <h2>America</h2>
-    <ol>
-        <li>USA
-            <ul>
-                <li>New York City</li>
-                <li>Los Angeles</li>
-                <li>Chicago</li>
-            </ul>
-        </li>
-        <li>Brazil
-            <ul>
-                <li>Rio de Janeiro</li>
-                <li>São Paulo</li>
-                <li>Salvador</li>
-            </ul>
-        </li>
-        <li>Canada
-            <ul>
-                <li>Toronto</li>
-                <li>Vancouver</li>
-                <li>Montreal</li>
-            </ul>
-        </li>
-    </ol>
-</section>
-
-<!-- Africa Section -->
-<section id="africa">
-    <h2>Africa</h2>
-    <ol>
-        <li>South Africa
-            <ul>
-                <li>Cape Town</li>
-                <li>Johannesburg</li>
-                <li>Durban</li>
-            </ul>
-        </li>
-        <li>Egypt
-            <ul>
-                <li>Cairo</li>
-                <li>Luxor</li>
-                <li>Sharm El Sheikh</li>
-            </ul>
-        </li>
-        <li>Morocco
-            <ul>
-                <li>Marrakech</li>
-                <li>Casablanca</li>
-                <li>Fez</li>
-            </ul>
-        </li>
-    </ol>
-</section>
+<footer>
+    <p>&copy; 2026 World Explorer Travel Project - created by Onyejekwe Philip Emeka</p>
+</footer>
 
 </body>
 </html>
